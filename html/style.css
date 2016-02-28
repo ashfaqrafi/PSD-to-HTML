@@ -1,0 +1,332 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+body {font-family: 'Roboto' , sans-serif;}
+
+.slicknav_menu{display: none}
+
+a:hover;a:focus{outline: none;border: none;text-decoration:none;}
+.fix {overflow:hidden}
+img{max-width: 100%;height: auto}
+.floatright{float:right}
+.floatleft{float: left}
+.header_area {background-color: #E7E7E7}
+.main {margin: 0 auto;width: 960px}
+.header {}
+.menus{font-weight:300;}
+.menus strong{font-weight:400}
+.menus {}
+.menus ul#nav{margin: 0; padding:15px;list-style: none; margin-top: 44px;margin-bottom: 46px}
+.menus ul#nav li{display: inline-block;position: relative;}
+.menus ul#nav li a{font-family: 'Roboto Condensed', sans-serif;font-size: 16px;color: #000;font-weight: bold;padding: 10px; text-transform: uppercase;text-decoration: none;}
+.menus ul#nav li a:hover{}
+.menus ul#nav li ul{}
+.menus ul#nav li ul li{}
+.menus ul#nav li ul li a{}
+.menus ul#nav li ul li a:hover{}
+.logo {margin-top: 44px; margin-bottom: 46px;}
+.comm {}
+.para{padding-right:432px;margin-top:118px;margin-bottom: 62px}
+.banner_area {}
+.bannr {}
+.items_area{display: inline-block; text-align: center;position: relative;font-size: 18px;font-weight: 300;margin-top: 59px;padding: 70px;margin-bottom: 61px}
+.items_area:after{margin-right: 216px; background:#E7E7E7;width: 1172px;height: 3px;content: "";position:absolute;left: 50%;margin-left: -586px;margin-top: 61px}
+.items_area h2{font-size: 18px;font-family:'Roboto Slab', serif;font-weight: 700}
+.items {display: inline-block;position: relative;}
+.p_icon{display: inline-block;position: relative;}
+.latest_works_area {display: inline-block;position: relative;text-align: left; margin-left: -16px;}
+.title {margin-left: 16px;width: 380px;padding: 21px;font-size: 14px;font-family: 'Roboto', sans-serif;font-weight: 400}
+.title h2{font-size: 18px;font-family: 'Roboto Slab', serif;font-weight: 700}
+.title h3{font-size: 13px;font-family: 'Roboto Slab', serif;font-weight: 300}
+.business {}
+.fun_products {}
+.branding {}
+.comments_area {background-color:#E7E7E7;height: 225px;margin-top: 60px;text-align: center;}
+.back {}
+.footer_area {}
+.footer_widgets {}
+.widgets1 {}
+.last_footer {}
+.lastone {}
+.footer_left {
+}
